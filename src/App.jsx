@@ -1,7 +1,12 @@
+import Demo from "./component/Demo";
+
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <h1>Im learning React.</h1>
+      <Demo />
+    </div>
+  );
+};
 
-export default App
+export default App;
