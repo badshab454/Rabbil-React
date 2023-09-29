@@ -1,17 +1,13 @@
 const App = () => {
-  const city = ['Dhaka','London','Delhi','Kolkata'];
-  return (
-    <div>
-      <ol>
-        {
-          city.map((item,i)=>{
-            return <li key={i.toString()}>{item}</li>
-          })
-        }
-      </ol>
-           
-    </div>
-  );
+ const status = false;
+    switch(status){
+      case true:
+        return <button>Logout</button>
+      case false: 
+        return <button>Login</button>
+      default:
+        return othe;
+    }
 };
 
 export default App;
