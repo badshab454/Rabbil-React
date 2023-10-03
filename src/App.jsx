@@ -1,10 +1,11 @@
+import Hero from "./component/Hero";
+
 const App = () => {
- const status = true;
-    return (
-      <div>
-        {status?<button>Logout</button>:<button>Login</button>}
-      </div>
-    )
+  return (
+    <div>
+      <Hero title="Hero title" />
+    </div>
+  );
 };
 
 export default App;
