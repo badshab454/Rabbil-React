@@ -2,7 +2,7 @@
 const Hero = (props) => {
     return (
         <div>
-            <h1>{props.item['age']}</h1>
+            <button onClick={props.childBtnClick}>Submit</button>
         </div>
     );
 };
