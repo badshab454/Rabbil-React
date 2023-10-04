@@ -1,12 +1,12 @@
 import Hero from "./component/Hero";
 
 const App = () => {
-  const BtnClick=()=>{
-    alert("Say Hello!");
+  const BtnClick = () => {
+    alert('alert')
   }
   return (
     <div>
-      <Hero childBtnClick={BtnClick} />
+      <button onClick={BtnClick}>Submit</button>
     </div>
   );
 };
