@@ -1,13 +1,17 @@
+import {useRef} from "react";
 
 const App = () => {
-  const BtnClick = () => {
-    alert('alert')
+  let myHeadLine=useRef();
+  const change = () => {
+    myHeadLine.current.innerHTML="<ul><li>A</li><li>B</li></ul>";
+                                      
   }
   return (
     <div>
-      <button onClick={BtnClick}>Submit</button>
+      <h1 ref={myHeadLine}></h1>
+      <button onClick={change}>Click Me</button>
     </div>
-  );
+  ); 
 };
 
 export default App;
